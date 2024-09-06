@@ -29,8 +29,12 @@ echo "DISTRIB_SOURCECODE='lede'" >>package/base-files/files/etc/openwrt_release
 # ------------------------------- Other started -------------------------------
 #
 # Add luci-app-amlogic
-svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
-
+# svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
+svn co https://op.dllkids.xyz/packages/mipsel_24kc/luci-app-passwall_git-25.248.46804-ecfbfe2_all.ipk package/luci-app-passwall_git-25.248.46804-ecfbfe2_all
+svn co https://op.dllkids.xyz/packages/mipsel_24kc/luci-app-partexp_git-25.191.45611-1ef731d_all.ipk package/luci-app-partexp_git-25.191.45611-1ef731d_all
+svn co https://op.dllkids.xyz/packages/mipsel_24kc/mosdns_5.3.3-235_mipsel_24kc.ipk package/mosdns_5.3.3-235_mipsel_24kc
+svn co https://op.dllkids.xyz/packages/mipsel_24kc/luci-i18n-mosdns-zh-cn_git-23.309.43711-74d15c2_all.ipk package/luci-i18n-mosdns-zh-cn_git-23.309.43711-74d15c2_all
+svn co https://op.dllkids.xyz/packages/mipsel_24kc/miniupnpd-iptables_3022-08-31-13_mipsel_24kc.ipk package/miniupnpd-iptables_3022-08-31-13_mipsel_24kc
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
 # svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
